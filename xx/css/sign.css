@@ -1,0 +1,49 @@
+body {margin: 0px
+}
+
+h1{
+    text-shadow: 4px 4px 5px #808080;font-size: 30px;color: #3968bc;text-align: center
+}
+.max-box{
+    width: 400px;height: 300px;margin: 150px auto;background-color: #3968bc;box-shadow: 4px 4px 5px #808080;opacity: 0.8;border-radius: 15px;position: relative
+}
+form{
+    position: absolute;margin-top: 20px;margin-left: 20px
+}
+
+.name, .password {
+    width: 400px;
+    height: 40px;
+    margin-top: 30px;
+}
+input{
+    height: 30px;border: 0px
+}
+.password>input{
+    margin-left: 8px;
+}
+
+
+div.slide-border{
+    width: 100px;height: 30px;position: relative;top: -25px;left: 260px
+}
+.slide-block{
+    border: 1px solid #000;width: 40px;height: 16px; border-radius: 10px;background-color: #fff;
+}
+span{
+    float: left;width: 20px;height: 16px;text-align: center
+}
+
+.slide{
+    width: 20.5px;height:16px;background-color: #727a7c;border-radius: 10px;position: absolute;cursor: pointer;left: 1px
+}
+
+.sign{
+    width: 200px;height: 40px;border-radius: 10px;background-color: #fff;text-align: center;font-size: 30px;font-weight: bold;box-shadow: 2px 2px 2px #463e3e;margin: 50px 60px;
+}
+.sign:hover{
+    background: #808080;cursor: pointer
+}
+.text{
+    width: 50px;height: 16px;font-size: 12px;position: relative;left: 45px;top: -16px
+}

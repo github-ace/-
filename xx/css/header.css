@@ -1,0 +1,43 @@
+﻿
+.header{
+    width: inherit; height: 50px;min-width: 1000px;background-color: white
+}
+/*
+    下面的为搜索框样式；2016/11/17
+    */
+.search{
+    position: absolute;height: inherit
+}
+.header form{
+    position: absolute;height: inherit;
+}
+.header .search-input{
+    width: 500px; height: 35px; position: absolute; outline: none; top: 7.5%; font-family: 'Microsoft YaHei';font-size: 15px
+}
+.header .search-submit{
+    width: 60px; height: 41px; background-color: #0c70aa; border: 0px;position: absolute;left: 500px;top: 7.5%; font-family: 'Microsoft YaHei' 
+}
+/*
+    下面是右侧栏的css样式；2016/11/17
+    */
+.right{
+    float: right;height: inherit;
+}
+.right ul{
+    list-style: none;height: inherit; margin-right: 15px;margin-top: 0px
+}
+.right ul li{
+    float: left;height: inherit;
+}
+.right ul li a{
+    color: #000;text-align:center;font-size: 30px;padding-left: 25px;font-family: 'Microsoft YaHei';text-decoration: none
+}
+.right ul li a:hover{
+    color: #0c70aa; position: relative;top: -3px;
+}
+/*
+	下面为登录页右侧栏的css样式；2016/11/24
+	*/
+.right .right-button{
+	width: 60px; height: 41px; background-color: #0c70aa; border: 0px;top: 7.5%; font-family: 'Microsoft YaHei' ;position:relative;right:30px
+}

@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+}
+.user_name,.user_password,.captcha,.cap,.submit{
+    height: 50px;border: 1px inset black;font-family: 'Microsoft YaHei' ;font-size: 25px;outline: none;
+}
+.user_name{
+    width: 300px;border-radius: 8px;
+}
+.user_password{
+    width: 300px;border-radius: 8px;margin-top: 10px
+}
+.captcha{
+    width:150px;border-radius: 8px 0px 0px 8px;position: relative;top: -18px
+}
+.cap{
+    border-radius: 0px 8px 8px 0px;width: 147px;border-width: 1px 1px 1px 0px;margin-top: 10px;padding: 1px
+}
+.submit{
+    width:150px; background-color: #44bac1;border-radius: 8px;border: initial;margin-top: 10px;margin-left: 140px
+}
+/*
+    整个登录框的样式；2016/11/24
+    */
+.yanzheng{
+    width: 310px;height: auto;position: fixed
+}
+/*
+    警示框的样式代码；2016/11/26
+    */
+.alert{
+    padding: 10px;background-color: #6a6666;font-family: 'Microsoft YaHei';font-size: 10px;box-shadow: 2px 2px 3px;position: fixed
+}

@@ -1,0 +1,29 @@
+<?php
+    session_start();
+    //定义验证码的大小
+    define("captcha_width",150);define("captcha_height",50);define("captcha_numchars",6);
+    $pass_phrase="";
+    $img=imagecreatetruecolor(captcha_width,captcha_height);
+    //定义验证码字体颜色
+    $text_color=imagecolorallocate($img,0,0,0);
+    //定义验证码像素点的颜色
+    $graphic_color=imagecolorallocate($img,64,64,64);
+    //定义验证码背景颜色
+    $bg_color=imagecolorallocate($img,255,255,255);
+    imagefilledrectangle($img,0,0,captcha_width,captcha_height,$bg_color);
+    for($i=0;$i<50;$i++){
+        imagesetpixel($img,rand()%captcha_width,rand()%captcha_height,$graphic_color);
+    };
+    for($i=0;$i<5;$i++){
+      imageline($img,0,rand()%captcha_height,captcha_width,rand()%captcha_height,$graphic_color);  
+    };
+    for($i=0;$i<captcha_numchars;$i++){
+        $pass_phrase.=chr(rand(97,122));
+    };
+    $_SESSION['captcha']=$pass_phrase;
+    imagettftext($img,35,0,20,captcha_height-10,$text_color,"LetterGothicStd.ttf",$pass_phrase);
+    header('Content-type:image/png');
+    imagepng($img);
+    imagedestroy($img);
+?>
+
